@@ -1,0 +1,57 @@
+.auth {
+    display: flex;
+    width: clamp(1400px, 90%, 300px);
+    min-height: 100vh;
+}
+.authImage {
+    align-self: center;
+}
+.authContainer {
+    flex: 1;
+}
+.authContainer h1 {
+    font-size: 3rem;
+    margin: 2rem 0;
+}
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+}
+.inputContainer h3 {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.inputContainer input {
+    padding: 1.3rem;
+    font-size: 1rem;
+    background: white;
+    outline: none;
+    border: 2px solid transparent;
+    transition: 0.3s ease;
+    border-radius: 20px;
+    margin: 0.5rem 0;
+}
+
+.inputContainer input:focus {
+    border: 2px solid var(--primary-color);
+}
+
+.authContainer button,
+.authContainer button:hover {
+    width: 100%;
+    background: var(--primary-color);
+    color: white;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    margin: 1rem 0;
+    border-radius: 20px;
+    padding: 0.9rem;
+}
+.authContainer p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: gray;
+    font-weight: 600;
+    cursor: pointer;
+}

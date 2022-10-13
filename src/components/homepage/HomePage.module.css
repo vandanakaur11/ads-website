@@ -1,0 +1,214 @@
+.home {
+    flex: 1;
+}
+
+.homeTop {
+    display: flex;
+}
+
+.chart {
+    background: white;
+    border-radius: 2rem;
+    padding: 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+    flex: 1;
+}
+
+.chartImage {
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.chartImage * {
+    width: 100%;
+}
+
+.chartDetails {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.chartContent {
+    /* margin-right: 2rem; */
+    text-align: center;
+    margin: 0.5rem;
+}
+
+.chartContent button {
+    color: var(--dark-gray);
+    font-size: 1rem;
+}
+
+.chartContent h2 {
+    color: var(--dark-gray);
+    font-size: 1.5rem;
+}
+.chartContent h3 {
+    color: var(--green);
+    font-size: 1.2rem;
+}
+
+.dotFilled {
+    width: 15px;
+    height: 15px;
+    background: var(--primary-color);
+    border-radius: 50%;
+}
+
+.demographics {
+    background: white;
+    border-radius: 2rem;
+}
+
+.demographics .demographicsHeader,
+.demographicsHeaderData,
+.demographicsPerson {
+    display: flex;
+    align-items: center;
+}
+
+.demographics h3 {
+    font-weight: 400;
+    color: gray;
+    margin-right: 1rem;
+    font-size: 1rem;
+}
+
+.demographicsHeader {
+    padding: 1rem 2rem;
+    border-bottom: 1px solid lightgray;
+}
+
+.demographicsHeader h3 {
+    margin-right: 3rem;
+}
+
+.demographicsPerson {
+    margin: 0 0.5rem;
+}
+
+.demographicsPerson img {
+    flex: 1;
+    object-fit: contain !important;
+    width: 25px;
+    height: 25px;
+}
+
+.demographicsPerson span {
+    margin-left: 0.5rem;
+    font-weight: 600;
+}
+.demographicsCompatible {
+    display: flex;
+    justify-content: space-around;
+}
+
+.demographicsCompatible > .demographicsTopPlacements {
+    flex: 1;
+    padding: 1rem;
+}
+.demographicsCompatible > .demographicsTopPlacements:nth-child(2) {
+    border-left: 1px solid #efefef;
+}
+
+.demographicsTopRegions {
+    border-left: 1px solid lightgray;
+}
+
+.compatibleData {
+    display: flex;
+    margin: 2rem 0;
+}
+
+.compatibleData > h3 {
+    margin-right: 0;
+    color: var(--dark-gray) !important;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.compatibleDataLeft {
+    display: flex;
+    flex: 1;
+}
+.compatibleDataLeft * img {
+    padding-right: 1rem !important;
+}
+.compatibleDataLeft p {
+    font-weight: 600;
+    padding-right: 1rem !important;
+    font-size: 1.1rem;
+}
+.demographicsBottom .demographicsBottomHeader {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0.5rem;
+}
+
+.demographicsBottomHeader h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: gray;
+}
+
+.demographicsBottomHeader h3 b {
+    font-weight: 500;
+    color: #333;
+}
+.demographicsBottomBar {
+    margin: 1rem 0.5rem;
+    margin-bottom: 0;
+    background: white;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+}
+.demographicsBottomBar p {
+    color: gray;
+    font-weight: 600;
+}
+
+.demographicsBottomBar > p {
+    color: var(--primary-color);
+}
+.demographicsBottomBar span {
+    color: gray;
+}
+.demographicsBottomBar p b {
+    color: var(--dark-gray);
+    font-weight: 500;
+}
+
+.homeBottomHeaderBar {
+    margin: 1rem 0;
+}
+
+.homeBottomHeaderBar button {
+    margin: 0 1rem;
+}
+
+.homeBottomHeaderBar button p {
+    color: var(--primary-color) !important;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 0.05rem 0.5rem;
+    margin: 0 0.2rem;
+    border-radius: 50%;
+}
+
+.homeBottom {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 1350px) {
+    .homeTop {
+        flex-direction: column;
+    }
+    .chart {
+        margin-right: 0;
+    }
+}

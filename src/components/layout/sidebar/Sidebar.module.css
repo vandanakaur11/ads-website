@@ -1,0 +1,72 @@
+.sidebar {
+    height: auto;
+    width: 275px;
+    display: flex;
+    flex-direction: column;
+    min-height: 85vh;
+}
+.sidebarProfile {
+    text-align: center;
+    margin: auto;
+    margin-top: 2rem;
+    width: 80%;
+}
+
+.sidebarProfileImage * {
+    object-fit: cover;
+    border-radius: 10%;
+}
+
+.sidebarProfile h3 {
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.sidebarProfile button {
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 200px !important;
+}
+
+.campaignBtn {
+    background: var(--primary-color) !important;
+    margin: 0.5rem 0 !important;
+    color: white !important;
+}
+
+.sidebarProfile .dashboardBtn,
+.sidebarProfile .dashboardBtn:hover {
+    background: white;
+    margin: 0.5rem 0;
+    color: var(--primary-color) !important;
+}
+.sidebarList img {
+    object-fit: contain;
+}
+
+.sidebarList * {
+    font-size: 1rem !important;
+    color: gray;
+}
+
+.sidebar > button {
+    margin-top: auto;
+    display: flex;
+    margin-right: auto;
+    margin-left: 35px;
+    margin-bottom: 20px;
+    color: var(--dark-gray);
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+.link {
+    border-left: 5px solid transparent !important;
+    transition: 0.3s ease;
+}
+
+.activeLink {
+    border-left: 5px solid var(--primary-color) !important;
+}

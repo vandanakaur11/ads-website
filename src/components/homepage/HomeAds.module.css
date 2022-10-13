@@ -1,0 +1,122 @@
+.homeBottom {
+    margin: 1.5rem 0;
+    flex: 1;
+}
+.homeBottomMain {
+    background: white;
+    border-radius: 2rem;
+}
+
+.homeBottomMainHeader,
+.homeBottomMainHeaderLeft {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.homeBottomMainHeader {
+    justify-content: space-between;
+    padding: 1rem 3rem;
+}
+
+.homeBottomMainHeaderLeft h4 {
+    margin-left: 1rem;
+    color: var(--dark-gray);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.homeBottomMainHeaderLeft h4 span {
+    color: var(--primary-color);
+}
+
+.homeBottomMainHeaderRight button {
+    color: var(--primary-color);
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.homeBottomComplex {
+    display: flex;
+    flex: 1;
+}
+
+/* .homeBottomImage {
+    width: clamp(320px, 100%, 1400px);
+} */
+
+.homeBottomImage * {
+    height: 220px !important;
+    min-width: 320px !important;
+}
+
+.homeBottomComplex {
+    padding: 1.5rem;
+}
+
+.homeBottomComplex .homeBottomAvatar {
+    width: 240px;
+    height: 240px;
+    background: lightgray;
+    border-radius: 1rem;
+}
+.homeBottomComplexData {
+    margin: 0 2rem;
+    flex: 1;
+}
+.homeBottomComplexDataTop {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 1rem;
+}
+
+.homeBottomComplexDataBottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.chartDetails {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.chartContent {
+    margin-right: 2rem;
+    text-align: center;
+}
+
+.chartContent button {
+    color: var(--dark-gray);
+    font-size: 1rem;
+}
+
+.chartContent h2 {
+    color: var(--dark-gray);
+    font-size: 1.5rem;
+}
+.chartContent h3 {
+    color: var(--green);
+    font-size: 1.2rem;
+}
+
+.dotFilled {
+    width: 15px;
+    height: 15px;
+    background: var(--primary-color);
+    border-radius: 50%;
+}
+
+@media (max-width: 1400px) {
+    .homeBottomComplex {
+        flex-direction: column;
+    }
+    .homeBottomImage * {
+        height: 100% !important;
+        width: 100% !important;
+    }
+}

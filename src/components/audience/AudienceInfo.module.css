@@ -1,0 +1,62 @@
+.audienceInfo {
+    flex: 0.25;
+    margin-top: 42px;
+    display: flex;
+    flex-direction: column;
+}
+
+.states {
+    border-radius: 20px;
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 2rem;
+}
+.states > div {
+    margin-right: 20px;
+}
+
+.states h3 {
+    font-size: 18px;
+    color: lightgray;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.statesDetail {
+    display: flex;
+    align-items: center;
+}
+
+.statesDetailNum {
+    margin-left: 10px;
+}
+
+.statesDetailNum h4 {
+    color: var(--dark-gray);
+    font-size: 24px;
+}
+
+.statesDetailNum p {
+    color: red;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.audienceInfoDetails {
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    height: auto;
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 991px) {
+    .audienceInfo {
+        display: none;
+        flex: 0;
+    }
+}

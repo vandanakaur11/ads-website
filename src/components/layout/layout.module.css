@@ -1,0 +1,12 @@
+.layout {
+    padding: 2rem;
+}
+.layout .mainContainer {
+    display: flex;
+}
+
+@media (max-width: 550px) {
+    .layout {
+        padding: 0.5rem;
+    }
+}

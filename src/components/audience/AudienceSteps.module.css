@@ -1,0 +1,253 @@
+.audienceWrapper {
+    flex: 1;
+    margin: 0 1.5rem;
+    height: 80vh;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    margin-left: 5rem;
+}
+
+.audienceWrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.audienceWrapper a > button,
+.audienceWrapper a > button:hover {
+    background: var(--primary-color);
+    display: block;
+    margin-left: auto;
+    color: white;
+    text-transform: capitalize;
+    font-size: 1rem;
+    padding: 10px 1.5rem;
+}
+
+.audienceContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-around;
+}
+
+.audienceContainer > button {
+    margin: 0.5rem 0;
+    padding: 1rem 2rem;
+    width: 48%;
+    min-width: 250px;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 0.5rem;
+}
+
+.audiencesMain1 {
+    flex: 0.75;
+    margin-right: 2rem;
+}
+
+.audiencesMain1 > h3 {
+    font-size: 20px;
+    font-weight: 600;
+    flex: 0.9;
+}
+
+.audiencesMain2 > h3 {
+    font-size: 20px;
+    font-weight: 600;
+    flex: 0.3;
+}
+
+.audiences {
+    width: 100%;
+    box-shadow: var(--box-shadow);
+    background: white;
+    border-radius: 20px;
+    margin: 1rem 0;
+    padding: 1.5rem;
+    min-height: 100vh;
+}
+
+.audiencesSteps {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.3s ease;
+    padding-bottom: 2rem;
+    min-width: max-content;
+}
+
+.audiencesSteps > span:not(:last-child) {
+    border: 1px dashed gray;
+    flex: 1;
+    margin-bottom: 25px;
+}
+
+.audiencesStep {
+    text-align: center;
+    display: grid;
+    place-items: center;
+    transition: 0.3s ease;
+}
+.audiencesStep h2 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid var(--primary-color);
+    background: var(--primary-color);
+    color: white;
+    display: grid;
+    place-items: center;
+    font-weight: 500;
+    font-size: 20px;
+    transition: 0.3s ease;
+    transition: 0.3s ease;
+    pointer-events: none;
+}
+
+.audiencesStep > h3 {
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+.activeStep h2 {
+    border: 1px solid lightgray;
+    background: white;
+    color: lightgray;
+    transition: 0.3s ease;
+}
+.activeStep > h3 {
+    color: lightgray;
+    transition: 0.3s ease;
+}
+
+.select {
+    margin: 1.5rem 0;
+}
+.select > h3 {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+.select h4 {
+    color: var(--purple);
+    font-weight: 500;
+    text-align: right;
+    font-size: 16px;
+}
+
+.select .inputNumber {
+    width: 100px;
+    padding: 1rem;
+    border: 1px solid lightgray;
+    border-radius: 20px;
+    margin: 1rem 0;
+    text-align: center;
+    font-size: 16px;
+    color: gray;
+    outline: none;
+}
+.select > span {
+    margin: 2rem;
+    color: gray;
+    font-size: 20px;
+}
+
+.select .selectChip {
+    background: #f5f5f5 !important;
+    margin: 0.5rem !important;
+    margin-left: 0 !important;
+    padding: 0.5rem !important;
+    border-radius: 0 !important;
+}
+.select > p {
+    margin: 1rem 0;
+    border: 1px solid lightgray;
+    padding: 20px;
+    color: gray;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+.radioGroup {
+    flex-direction: row !important;
+}
+
+/* DEMOGRAPHICS */
+
+.audienceContainer .box {
+    padding: 50px 30px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f8f8f8;
+    border-radius: 20px;
+    margin: 1rem 0;
+    margin-right: 2rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+    border: 2px solid transparent;
+}
+.audienceContainer .box:hover {
+    border: 2px solid var(--primary-color);
+}
+
+.audienceContainer .box .boxImg {
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid lightgray;
+}
+
+.audienceContainer .box h3 {
+    font-size: 18px;
+    font-weight: 500 !important;
+    color: var(--dark-gray);
+    text-align: center;
+}
+.userInterests > button,
+.userInterests > button:hover {
+    display: block;
+    margin-left: auto;
+    text-transform: capitalize;
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+.termsAndTags {
+    display: flex;
+    flex-direction: column;
+}
+
+.audienceWrapper a > button,
+.audienceWrapper a > button:hover {
+    background: var(--primary-color);
+    width: 200px;
+    color: white;
+    margin-left: auto;
+    display: block;
+}
+
+@media (max-width: 700px) {
+    .audienceWrapper {
+        margin-left: 1rem;
+    }
+}
+@media (max-width: 700px) {
+    .audiencesMain1 {
+        flex: 1;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 700px) {
+    .audienceContainer .box {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 550px) {
+    .audienceWrapper a > button {
+        margin: auto;
+    }
+}

@@ -1,0 +1,103 @@
+.adsContent {
+    flex: 1;
+    margin: 0 1.5rem;
+    height: 80vh;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    margin-left: 5rem;
+}
+
+.adsContent::-webkit-scrollbar {
+    display: none;
+}
+
+.adsContent > h2 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.adsContentContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.adsContentContainer .box {
+    padding: 30px 25px;
+    width: 240px;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    border-radius: 20px;
+    margin: 1rem 0;
+    cursor: pointer;
+    transition: 0.3s ease;
+    border: 2px solid transparent;
+    text-align: center;
+    border: 2px solid transparent;
+}
+
+.adsContentContainer .boxActive {
+    border: 2px solid var(--primary-color);
+}
+
+.adsContentContainer .box:last-child {
+    margin-right: 0;
+}
+
+.adsContentContainer .box h3 {
+    font-weight: 500;
+    margin: 0.5rem 0;
+}
+
+.adsContentActive {
+    margin-top: 2rem;
+    width: 100%;
+    height: 400px;
+    background: white;
+    border-radius: 20px;
+    border: 2px dashed var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.adsContentActive .dropBox {
+    text-align: center;
+}
+
+.dropBox p {
+    color: gray;
+    margin-top: 0.5rem;
+}
+.dropBox h3 {
+    font-weight: 400;
+}
+.adsContent a > button,
+.adsContent a > button:hover {
+    margin: 2rem 0;
+    display: block;
+    margin-left: auto;
+    width: 200px;
+    background: var(--primary-color);
+    color: white;
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+
+@media (max-width: 991px) {
+    .adsContent {
+        margin-left: 1rem;
+    }
+}
+
+@media (max-width: 550px) {
+    .adsContent a > button {
+        margin: 2rem auto;
+    }
+}

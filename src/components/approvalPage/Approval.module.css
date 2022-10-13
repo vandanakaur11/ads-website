@@ -1,0 +1,63 @@
+.approval {
+    flex: 1;
+    margin-left: 5rem;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    margin-left: 5rem;
+}
+
+.approval::-webkit-scrollbar {
+    display: none;
+}
+
+.approval h2 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+.approvalListItem {
+    border-radius: 20px !important;
+    background: white !important;
+    justify-content: space-between !important;
+    padding: 10px 3rem !important;
+    margin-bottom: 1.5rem !important;
+}
+.approvalListItem * {
+    transition: 0.3s ease;
+}
+
+.approvalListItem:hover h3,
+.approvalListItem:hover h4,
+.approvalListItem:hover p {
+    color: var(--primary-color);
+}
+
+.approvalListItem h4 {
+    flex: 1;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.approvalListItem > .listSpan {
+    margin: 0 4vw;
+    padding: 1.5rem 0 !important;
+    width: 1px;
+    background: #555;
+}
+.approvalImage {
+    width: clamp(50%, 700px, 90%);
+    margin: auto;
+}
+.approvalImage * {
+    object-fit: contain;
+}
+
+@media (max-width: 991px) {
+    .approval {
+        margin-left: 0;
+    }
+}

@@ -1,0 +1,72 @@
+.retargeting {
+    margin-left: 5rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.retargeting::-webkit-scrollbar {
+    display: none;
+}
+
+.retargeting h2 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+.retargetingMain {
+    flex: 1;
+    padding: 2rem;
+    border-radius: 20px;
+    background: white;
+}
+
+.select {
+    margin-bottom: 2rem;
+}
+
+.select h3 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.select a > button,
+.select a > button:hover {
+    width: 150px !important;
+    background: var(--primary-color);
+    color: white;
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+
+.retargeting a {
+    width: 200px;
+    margin-left: auto;
+    margin-top: 2rem;
+}
+
+.retargeting a > button,
+.retargeting a > button:hover {
+    background: var(--primary-color);
+    color: white;
+    width: 100%;
+    display: block;
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+
+@media (max-width: 991px) {
+    .retargeting {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 550px) {
+    .retargeting a {
+        margin: 2rem auto;
+    }
+}
